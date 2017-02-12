@@ -1,0 +1,80 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #d5d5d5;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100vh;
+  font-family: helvetica;
+}
+
+.wrapper {
+  text-align: center;
+  margin-bottom: 50vh;
+  font-weight: bold;
+}
+
+.instructions {
+  font-size: 2.75rem;
+  color: #ff5400;
+  margin-bottom: 25px;
+  	border-bottom: solid 1px black;
+  	padding-bottom: 0.5em;
+  	width: 100%;
+}
+
+#input {
+	background: #d5d5d5;
+	border: 0;
+	color: #005b74;
+	font-size: 2.75rem;
+	text-align: center;
+	line-height: 1.5;
+}
+
+#input:focus {
+	outline: 0;
+}
+
+#character {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #ff5400;
+  text-align: center;
+  margin-bottom: 50px;
+  margin: auto;
+  width: auto;
+  display: block;
+  padding: 0.125em 0.5em;
+}
+
+#code {
+  color: #005b74;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.footer {
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.enter-icon {
+	margin-bottom: -0.125em;
+}
