@@ -12,12 +12,12 @@ body {
   background: #d5d5d5;
   justify-content: flex-end;
   height: 100vh;
-  font-family: helvetica;
+  font-family: 'source sans pro';
 }
 
 .wrapper {
   text-align: center;
-  margin-bottom: 50vh;
+  margin-bottom: 250px;
   font-weight: bold;
 }
 
@@ -28,21 +28,23 @@ body {
   	border-bottom: solid 1px black;
   	padding-bottom: 0.5em;
   	width: 100%;
+  	font-family: 'bitter';
 }
 
 #input {
 	background: #d5d5d5;
 	border: 0;
 	color: #005b74;
-	font-size: 2.75rem;
+	font-size: 6rem;
 	text-align: center;
 	line-height: 1.5;
+	margin-bottom: 50px;
 }
 #input:focus {
 	outline: 0;
 }
 #character {
-  font-size: 2.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ff5400;
   text-align: center;
