@@ -3,7 +3,7 @@ const character = document.getElementById('character');
 const code = document.getElementById('code');
 const instructions = document.getElementById('instructions');
 const input = document.getElementById('input');
-const validChar = 'Press <img class="enter-icon" src="/assets/images/Enter Key-50.png"> to copy to clipboard';
+const validChar = 'Press <img class="enter-icon" src="../../assets/images/Enter Key-50.png"> to copy to clipboard';
 const copiedText = 'Copied to clipboard!';
 
 
