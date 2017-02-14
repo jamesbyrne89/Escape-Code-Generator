@@ -17,19 +17,30 @@ body {
 
 .wrapper {
   text-align: center;
-  margin-bottom: 250px;
+  margin-bottom: 20vh;
   font-weight: bold;
+  width: 1000px;
 }
 
+/*--------- Instructions ---------
+--------------------------------- */
+
 .instructions {
-  font-size: 2.75rem;
-  color: #ff5400;
+  font-size: 2.5rem;
+  color: #F96A00;
   margin-bottom: 25px;
-  	border-bottom: solid 1px black;
-  	padding-bottom: 0.5em;
+  	padding-top: 0.5em;
   	width: 100%;
   	font-family: 'bitter';
 }
+
+.bounce {
+	  animation: bounce 1.5s infinite;
+	  animation-delay: 2s;	
+}
+
+/*--------- Input ---------
+--------------------------------- */
 
 #input {
 	background: #d5d5d5;
@@ -38,15 +49,49 @@ body {
 	font-size: 6rem;
 	text-align: center;
 	line-height: 1.5;
-	margin-bottom: 50px;
+	width: 100%;
+	border-bottom: solid 1px black;
 }
 #input:focus {
 	outline: 0;
+	border-bottom: solid 3px black;
 }
+
+#input::selection {
+	background: none;
+}
+
+/*--------- Code ---------
+--------------------------------- */
+
+
+
+#code {
+  color: #005b74;
+  font-size: 6rem;
+  text-align: center;
+  background: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 300px;
+}
+
+#code::selection {
+	background: #F96A00;
+	color: white;
+}
+#code:focus {
+	outline: none;
+	}
+
+/*--------- Character ---------
+--------------------------------- */
+
 #character {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff5400;
+  color: #F96A00;
   text-align: center;
   margin-bottom: 50px;
   margin: auto;
@@ -55,16 +100,122 @@ body {
   padding: 0.125em 0.5em;
 }
 
-#code {
-  color: #005b74;
-  font-size: 4rem;
-  text-align: center;
-}
+
+
+/*--------- Footer ---------
+--------------------------------- */
 
 .footer {
   font-size: 1rem;
-  padding: 1em;
+  padding: 3em;
+  p {
+  	display: inline-block;
+  	margin-right: 20px;
+  }
 }
+
+/*--------- Buttons ---------
+--------------------------------- */
+
+  .btn:visited {
+  	color: black;
+  }
+
 .enter-icon {
 	margin-bottom: -0.125em;
+}
+ .btn {
+  	text-decoration: none;
+  	border: solid 1px black;
+  	padding: 0.5em;
+  	margin-left: 0.5em;
+  	color: black;
+	transition: all 0.3s;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	height: 2.5em;
+	width: 120px;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 1.375;
+	margin-bottom: -0.5em;
+
+  }
+
+  .btn:hover {
+  	color: white !important;
+  }
+
+  .btn:hover::after {
+  height: 100%;
+  width: 140%;
+  cursor: pointer;
+}
+  .btn::after {
+  height: 180%;
+  left: -40%;
+  top: 0;
+  transition-duration: 0.5s;
+  transform-origin: top left;
+  width: 0;
+  	transition: all ease-out 0.2s;
+  	  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  
+}
+
+.btn::after {
+	background: black;
+}
+
+.btn--tweet::after {
+	background: #1da1f2;
+}
+
+
+.btn--tweet {
+	background: #005b74;
+	border: none;
+	color: white;
+	line-height: 1.5;
+
+}
+
+.btn i {
+	margin-right: 1em;
+}
+
+.btn--tweet:hover::after {
+	color: white !important;
+	background-color: #1da1f2;
+
+}
+
+.btn--tweet:visited {
+	color: white !important;
+}
+
+@keyframes bounce {
+  0%, 25%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+  }
+  62% {
+    -moz-transform: translateY(-0.125em);
+    -ms-transform: translateY(-0.125em);
+    -webkit-transform: translateY(-0.125em);
+    transform: translateY(-0.125em);
+  }
 }

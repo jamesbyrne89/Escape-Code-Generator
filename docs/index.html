@@ -4,23 +4,19 @@
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Source+Sans+Pro" rel="stylesheet">
-        <link rel="stylesheet" href="assets/styles/styles-7e95d1fae8.css"/>
+        <link rel="stylesheet" href="assets/styles/styles-af606538cd.css"/>
     <link href="/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
     <link href="/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
-    <title>Escape Character Code Generator</title>
+    <script src="https://use.fontawesome.com/a697955832.js"></script>
+    <title>HTML Escape Character Generator</title>
 </head>
 <body>
     <main id="wrapper" class="wrapper">
-      <div id="instructions" class="instructions">Type a character to get the escape code</div>
-      <input id="input" type="text" maxlength="1" autofocus/>
-<div id="character"></div>
-  <div id="code"></div>
-    </main>
-      <footer class="footer">Created by James Byrne.</footer>
+    <div id="character"></div>
+  <input type="text" id="code" disabled>
+      <input id="input" type="text" maxlength="1" onclick="select()" style='width:100%' autofocus/>
+      <div id="instructions" class="instructions">Type something to get the HTML escape character</div>
+   </main>
+      <footer class="footer"><p>Created by James Byrne</p><a class="btn" href="http://jamestbyrne.com">Portfolio</a><a class="btn btn--tweet" href="https://twitter.com/intent/tweet?text=Escape%20Code%20Generator%20by%20@james_byrne%20https://jamesbyrne89.github.io/Escape-Code-Generator" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</a></footer>
 </body>
-
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="assets/scripts/app-5ad699b31e.js"></script>
+  <script src="assets/scripts/app-9671c8c687.js"></script>

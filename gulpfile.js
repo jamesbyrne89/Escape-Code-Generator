@@ -16,7 +16,8 @@ babel = require('gulp-babel'),
 es2015 = require('babel-preset-es2015'),
 del = require('del'),
 debug = require('gulp-debug'),
-rev = require('gulp-rev');
+rev = require('gulp-rev'),
+beautify = require('gulp-jsbeautify');
 
 // Default task that runs on 'Gulp' command
 
@@ -37,6 +38,20 @@ gulp.task('watch', function(){
 watch('app/assets/styles/*.css', function(){
 gulp.start('cssInject');
 });
+
+// Watch JS for changes and beautify
+
+//watch('app/assets/scripts/*.js', function(){
+//gulp.start('beautify');
+//});
+
+// JS beautifer
+
+//gulp.task('beautify', function() {
+  //return gulp.src('app/assets/scripts/app.js')
+  //  .pipe(beautify({indentSize: 2}))
+   // .pipe(gulp.dest('app/assets/scripts/app.js'));
+//});
 
 // Live reload browserSync
 
@@ -133,7 +148,7 @@ gulp.task('usemin', ['deleteDistFolder', 'compilecss'], function(){
 });
 
 // Preview final build in browserSync
-gulp.task('previewDist', function() {
+gulp.task('testBuild', function() {
   browserSync.init({
     notify: false,
     server: {

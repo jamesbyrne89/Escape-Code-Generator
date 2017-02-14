@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "clipboard": "^1.6.0",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-debug": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
+    "gulp-jsbeautify": "^0.1.1",
     "gulp-postcss": "^6.3.0",
     "gulp-rev": "^7.1.2",
     "gulp-uglify": "^2.0.1",
