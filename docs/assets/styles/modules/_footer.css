@@ -4,6 +4,7 @@
 .footer {
   font-size: 1rem;
   padding: 3em;
+   -webkit-font-smoothing: antialiased;
     @mixin at800 {
     padding: 1em 5%;
     font-size: 0.875rem;

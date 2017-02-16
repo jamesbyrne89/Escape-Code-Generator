@@ -25,6 +25,7 @@
 	text-align: center;
 	line-height: 1.375;
 	margin-bottom: -0.5em;
+   -webkit-font-smoothing: antialiased;
     @mixin at600 {
     display: block;
     margin: auto;

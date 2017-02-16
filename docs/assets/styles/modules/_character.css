@@ -12,4 +12,5 @@
   width: auto;
   display: block;
   padding: 0.125em 0.5em;
+   -webkit-font-smoothing: antialiased;
 }

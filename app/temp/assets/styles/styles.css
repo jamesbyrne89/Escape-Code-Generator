@@ -106,6 +106,7 @@ body {
   width: auto;
   display: block;
   padding: 0.125em 0.5em;
+   -webkit-font-smoothing: antialiased;
 }
 /*--------- Code ---------
 --------------------------------- */
@@ -120,6 +121,7 @@ body {
   width: 100%;
   padding: 0.125em 1em;
   display: none;
+   -webkit-font-smoothing: antialiased;
 }
 @media (max-width: 1000px) {
   .code {
@@ -188,6 +190,7 @@ body {
   padding-top: 0.5em;
   width: 100%;
   font-family: 'bitter', serif;
+ -webkit-font-smoothing: antialiased;
 }
 @media (max-width: 1000px) {}
 @media (max-width: 600px) {
@@ -207,6 +210,7 @@ body {
 .footer {
   font-size: 1rem;
   padding: 3em;
+   -webkit-font-smoothing: antialiased;
 }
 @media (max-width: 800px) {
   .footer {
@@ -255,6 +259,7 @@ body {
 	text-align: center;
 	line-height: 1.375;
 	margin-bottom: -0.5em;
+   -webkit-font-smoothing: antialiased;
 
   }
 @media (max-width: 600px) {

@@ -9,6 +9,7 @@
   padding-top: 0.5em;
   width: 100%;
   font-family: 'bitter', serif;
+ -webkit-font-smoothing: antialiased;
     @mixin at1000 {
 
   }
