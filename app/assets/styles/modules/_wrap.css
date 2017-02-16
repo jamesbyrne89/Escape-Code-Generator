@@ -4,9 +4,6 @@
   font-weight: bold;
   width: 940px;
   overflow: hidden;
-  @mixin at1000 {
-  	width: 820px;
-  }
     @mixin at1000 {
   	width: 90%;
   }

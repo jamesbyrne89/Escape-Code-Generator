@@ -37,7 +37,7 @@ body {
   width: 100%;
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
-  background: #F96A00;
+  background: #FE5B35;
   content: '';
   position: absolute;
 }
@@ -85,11 +85,6 @@ body {
 }
 @media (max-width: 1000px) {
   .wrap {
-    width: 820px;
-  }
-}
-@media (max-width: 1000px) {
-  .wrap {
     width: 90%;
   }
 }
@@ -104,7 +99,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'bitter';
-  color: #F96A00;
+  color: #FE5B35;
   text-align: center;
   margin-bottom: 50px;
   margin: auto;
@@ -188,7 +183,7 @@ body {
 .instructions {
   font-size: 2rem;
   height: 3em;
-  color: #F96A00;
+  color: #FE5B35;
   text-align: center;
   padding-top: 0.5em;
   width: 100%;

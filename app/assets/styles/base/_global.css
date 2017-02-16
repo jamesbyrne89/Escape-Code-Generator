@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #d5d5d5;
+  background: $paleGrey;
   justify-content: flex-end;
   height: 100vh;
   font-family: 'source sans pro';
@@ -17,7 +17,7 @@ body {
 .link {
   position: relative;
   text-decoration: none;
-  color: #005b74;
+  color: $navy;
 }
 
  .link::after {
@@ -28,7 +28,7 @@ body {
   transform-origin: top left;
   width: 100%;
   transition: all ease-out 0.2s;
-  background: #F96A00;
+  background: $orange;
   content: '';
   position: absolute;
 }

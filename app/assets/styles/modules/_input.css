@@ -2,9 +2,9 @@
 --------------------------------- */
 
 .input {
-	background: #d5d5d5;
+	background: $paleGrey;
 	border: 0;
-	color: #005b74;
+	color: $navy;
 	font-size: 6rem;
 	text-align: center;
 	line-height: 1.5;
