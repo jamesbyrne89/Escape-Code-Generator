@@ -35,7 +35,7 @@ gulp.task('watch', function(){
 
 // Watch CSS for changes and inject compiled and minified CSS
 
-watch('app/assets/styles/*.css', function(){
+watch('app/assets/styles/**/*.css', function(){
 gulp.start('cssInject');
 });
 
