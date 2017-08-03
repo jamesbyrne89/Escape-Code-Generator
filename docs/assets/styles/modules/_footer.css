@@ -2,22 +2,24 @@
 --------------------------------- */
 
 .footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
   font-size: 1rem;
   padding: 3em;
    -webkit-font-smoothing: antialiased;
     @mixin at800 {
-    padding: 1em 5%;
+    padding: 1em;
     font-size: 0.875rem;
   }
     @mixin at600 {
-    text-align: center;
   }
   p {
   	display: inline-block;
   	margin-right: 10px;
   	    @mixin at600 {
     padding: 0.25em;
-    margin: auto;
+    margin: 0.25em auto;
   }
   }
 }

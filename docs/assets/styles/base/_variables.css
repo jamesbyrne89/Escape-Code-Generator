@@ -1,3 +1,10 @@
-$orange: #FE5B35;
+/* Typography */
+
+$primaryFont: 'Zilla Slab', georgia, serif;
+$sansSerif: 'open sans', 'century gothic', arial, sans-serif;
+
+/* Colours */
+
+$orange: #fe5b35;
 $navy: #005b74;
 $paleGrey: #e5e5e5;

@@ -2,22 +2,25 @@
 --------------------------------- */
 
 .code {
-  color: #005b74;
+  color: $orange;
   font-size: 6rem;
   text-align: center;
+  font-family: inherit;
   background: transparent;
   border: none;
   display: block;
   margin: 0 auto 50px auto;
   width: 100%;
+  min-height: 7.5rem;
   padding: 0.125em 1em;
-  display: none;
+  visibility: hidden;
    -webkit-font-smoothing: antialiased;
   @mixin at1000 {
     font-size: 4rem;
   }
     @mixin at600 {
     padding: 0.125em;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -30,5 +33,5 @@
 	}
 
   .code--has-code {
-    display: block;
+    visibility: visible;
   }
