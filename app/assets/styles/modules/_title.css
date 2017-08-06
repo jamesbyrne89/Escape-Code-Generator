@@ -1,0 +1,8 @@
+.title {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 1.25rem;
+	font-family: $primaryFont;
+	color: $orange;
+}

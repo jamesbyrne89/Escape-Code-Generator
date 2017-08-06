@@ -2,12 +2,14 @@
 --------------------------------- */
 
 .input {
+	opacity:0;
+filter:alpha(opacity=0);
 	background: inherit;
 	border: 0;
 	color: $navy;
-	font-size: 6rem;
+	font-size: 0.1rem;
 	text-align: center;
-	line-height: 1.5;
+	line-height: 0.1;
 	border-bottom: solid 3px black;
 	max-width: 90%;
 	  @mixin at1000 {

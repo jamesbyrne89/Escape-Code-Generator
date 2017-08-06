@@ -2,11 +2,12 @@
 --------------------------------- */
 
 .code {
-  color: $orange;
+  color: $navy;
   font-size: 6rem;
   text-align: center;
   font-family: inherit;
   background: transparent;
+  font-weight: bold;
   border: none;
   display: block;
   margin: 0 auto 50px auto;

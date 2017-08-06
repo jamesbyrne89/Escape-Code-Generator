@@ -6,7 +6,8 @@
   }
 
 .enter-icon {
-	margin-bottom: -0.125em;
+	margin-bottom: -0.5em;
+  height: 2rem;
 }
  .btn {
   	text-decoration: none;
@@ -71,7 +72,7 @@
 
 
 .btn--tweet {
-	background: #005b74;
+	background: $navy;
 	border: none;
 	color: white;
 	line-height: 1.5;

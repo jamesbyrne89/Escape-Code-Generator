@@ -2,10 +2,10 @@
 --------------------------------- */
 
 #character {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   font-family: $primaryFont;
-  color: $navy;
+  color: $orange;
   text-align: center;
   margin-bottom: 30px;
   margin: auto;

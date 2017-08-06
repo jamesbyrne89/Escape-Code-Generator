@@ -19,7 +19,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #e5e5e5;
+  background: #f1f0eb;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -32,8 +32,8 @@ body {
   display: inline-block;
   text-decoration: none;
   transition: all ease-out 0.2s;
-  color: #005b74;
-    border-bottom: solid 2px #fe5b35;  
+  color: #263f6a;
+    border-bottom: solid 2px #f13c46;  
 }
 
 .link:hover {
@@ -78,12 +78,63 @@ body {
   }
 }
 
+@-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  }
+  50% {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  }
+  100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  }
+  50% {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  }
+  100% {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  }
+}
+
+.title {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 1.25rem;
+	font-family: 'Zilla Slab', georgia, serif;
+	color: #f13c46;
+}
+
 .wrap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   text-align: center;
-  margin-top: 10vh;
   font-weight: bold;
   width: 940px;
-  min-height: 50vh;
+  height: 25rem;
   overflow: hidden;
 }
 
@@ -100,10 +151,10 @@ body {
 --------------------------------- */
 
 #character {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   font-family: 'Zilla Slab', georgia, serif;
-  color: #005b74;
+  color: #f13c46;
   text-align: center;
   margin-bottom: 30px;
   margin: auto;
@@ -118,11 +169,12 @@ body {
 --------------------------------- */
 
 .code {
-  color: #fe5b35;
+  color: #263f6a;
   font-size: 6rem;
   text-align: center;
   font-family: inherit;
   background: transparent;
+  font-weight: bold;
   border: none;
   display: block;
   margin: 0 auto 50px auto;
@@ -170,12 +222,14 @@ body {
 --------------------------------- */
 
 .input {
+	opacity:0;
+filter:alpha(opacity=0);
 	background: inherit;
 	border: 0;
-	color: #005b74;
-	font-size: 6rem;
+	color: #263f6a;
+	font-size: 0.1rem;
 	text-align: center;
-	line-height: 1.5;
+	line-height: 0.1;
 	border-bottom: solid 3px black;
 	max-width: 90%;
 }
@@ -213,14 +267,26 @@ body {
 --------------------------------- */
 
 .instructions {
-  font-size: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.125em;
+  word-spacing: 0.1em;
   height: 4em;
-  color: #fe5b35;
+  color: #f13c46;
   text-align: center;
   padding-top: 0.5em;
   width: 100%;
-  font-family: 'Zilla Slab', georgia, serif;
+  font-family: 'open sans', 'century gothic', arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
  -webkit-font-smoothing: antialiased;
+ position: fixed;
+ top: -100px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ -webkit-animation: pulse 1s infinite forwards;
+         animation: pulse 1s infinite forwards;
 }
 
 @media (max-width: 1000px) {}
@@ -243,15 +309,22 @@ body {
 @media (max-width: 600px) {
 
   .enter-icon {
-    height: 50%;
+    height: 1rem;
     width: auto;
   }
+}
+
+.after {
+  position: relative;
+  top: 0;
 }
 
 /*--------- Footer ---------
 --------------------------------- */
 
 .footer {
+  position: absolute;
+  bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +336,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1rem;
-  padding: 3em;
+  padding: 1em;
    -webkit-font-smoothing: antialiased;
 }
 
@@ -299,7 +372,8 @@ body {
   }
 
 .enter-icon {
-	margin-bottom: -0.125em;
+	margin-bottom: -0.5em;
+  height: 2rem;
 }
 
 .btn {
@@ -370,7 +444,7 @@ body {
 }
 
 .btn--tweet {
-	background: #005b74;
+	background: #263f6a;
 	border: none;
 	color: white;
 	line-height: 1.5;

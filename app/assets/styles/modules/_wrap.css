@@ -1,9 +1,16 @@
 .wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   text-align: center;
-  margin-top: 10vh;
   font-weight: bold;
   width: 940px;
-  min-height: 50vh;
+  height: 25rem;
   overflow: hidden;
     @mixin at1000 {
   	width: 90%;

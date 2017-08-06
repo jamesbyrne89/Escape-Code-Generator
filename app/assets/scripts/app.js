@@ -330,8 +330,8 @@ const characters = {
 'ſ': '&#383;'
 }
 
-var copyCode = (e) => {
-   console.log(code)
+/* Copy to clipboard */
+const copyCode = (e) => {
      code.select();
      document.execCommand('copy');
      instructions.textContent=(copiedText);
@@ -340,13 +340,14 @@ var copyCode = (e) => {
      input.select();
 }
 
-
+/* Check input is valid */
 const validInput = () => {
-    character.textContent=('Escape character:')
+    character.textContent=(input.value)
   instructions.innerHTML=(validChar);
   document.querySelector('.enter-icon').classList.add('bounce');
   input.classList.add('input--is-input');
   code.classList.add('code--has-code');
+  instructions.classList.add('after');
   code.value=(characters[input.value])
 }
 

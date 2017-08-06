@@ -2,14 +2,25 @@
 --------------------------------- */
 
 .instructions {
-  font-size: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.125em;
+  word-spacing: 0.1em;
   height: 4em;
   color: $orange;
   text-align: center;
   padding-top: 0.5em;
   width: 100%;
-  font-family: $primaryFont;
+  font-family: $sansSerif;
+  font-weight: 900;
+  text-transform: uppercase;
  -webkit-font-smoothing: antialiased;
+ position: fixed;
+ top: -100px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ animation: pulse 1s infinite forwards;
     @mixin at1000 {
 
   }
@@ -26,8 +37,12 @@
 
 .enter-icon {
    @mixin at600 {
-    height: 50%;
+    height: 1rem;
     width: auto;
    }
 }
 
+.after {
+  position: relative;
+  top: 0;
+}
