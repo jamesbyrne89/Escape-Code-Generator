@@ -15,16 +15,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #f1f0eb;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
-  font-family: 'open sans', 'century gothic', arial, sans-serif;
+  font-family: 'inconsolata', 'century gothic', arial, sans-serif;
+  color: #fff;
 }
 
 .link {
@@ -32,8 +29,9 @@ body {
   display: inline-block;
   text-decoration: none;
   transition: all ease-out 0.2s;
-  color: #263f6a;
-    border-bottom: solid 2px #f13c46;  
+  font-weight: bold;
+  color: #fff;
+    border-bottom: solid 2px #fff;  
 }
 
 .link:hover {
@@ -44,6 +42,27 @@ body {
   width: 0;
   transition: all 0.2s;
  }
+
+.app-title {
+  position: relative;
+  top: 1rem;
+  left: 0rem;
+  text-align: left;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 1rem;
+ }
+
+.app-title::before {
+  content: '';
+  display: block;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  left: -1.5em;
+  top: 1.1em;
+  background: #fff;
+}
 
 /*--------- Keyframes ---------
 --------------------------------- */
@@ -78,33 +97,33 @@ body {
   }
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes blink {
   0% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
   }
-  50% {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  10% {
+  opacity: 0;
+  }
+  30% {
+    opacity: 1;
   }
   100% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
   }
 }
 
-@keyframes pulse {
+@keyframes blink {
   0% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
   }
-  50% {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  10% {
+  opacity: 0;
+  }
+  30% {
+    opacity: 1;
   }
   100% {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
   }
 }
 
@@ -113,12 +132,11 @@ body {
 	top: 1rem;
 	left: 1rem;
 	font-size: 1.25rem;
-	font-family: 'Zilla Slab', georgia, serif;
-	color: #f13c46;
+	font-family: 'inconsolata', georgia, serif;
+	color: #fff;
 }
 
 .wrap {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,15 +144,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: -20%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 90%;
+  height: 90%;
   margin: auto;
   text-align: center;
-  font-weight: bold;
-  width: 940px;
-  height: 25rem;
   overflow: hidden;
 }
 
@@ -153,42 +166,44 @@ body {
 #character {
   font-size: 2.25rem;
   font-weight: bold;
-  font-family: 'Zilla Slab', georgia, serif;
-  color: #f13c46;
+  font-family: 'inconsolata', georgia, serif;
+  color: #fff;
   text-align: center;
-  margin-bottom: 30px;
   margin: auto;
   width: auto;
-  min-height: 2.25rem;
-  display: block;
-  padding: 0.125em 0.5em;
+  line-height: 1;
+  display: none;
+  padding: 0.125em 0.5em 0.25em 0.5em;
    -webkit-font-smoothing: antialiased;
+   border: solid 1px #fff;
 }
 
 /*--------- Code ---------
 --------------------------------- */
 
 .code {
-  color: #263f6a;
-  font-size: 6rem;
+  color: #fff;
+  font-size: 12rem;
+  line-height: 1.2;
   text-align: center;
-  font-family: inherit;
-  background: transparent;
+  font-family: 'inconsolata', 'century gothic', arial, sans-serif;
   font-weight: bold;
-  border: none;
-  display: block;
-  margin: 0 auto 50px auto;
+  border-top: solid 1px #fff;
+  border-left: 0;
+  border-right: 0;
+  border: 0;
+  display: inline-block;
+  margin: 0 auto;
   width: 100%;
-  min-height: 7.5rem;
-  padding: 0.125em 1em;
   visibility: hidden;
    -webkit-font-smoothing: antialiased;
+background: #000;
 }
 
 @media (max-width: 1000px) {
 
   .code {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -201,13 +216,13 @@ body {
 }
 
 .code::-moz-selection {
-	background: #d5d5d5;
-	color: #005b74;
+	background: #f3ec19;
+	color: #fff;
 }
 
 .code::selection {
-	background: #d5d5d5;
-	color: #005b74;
+	background: #f3ec19;
+	color: #fff;
 }
 
 .code:focus {
@@ -226,7 +241,7 @@ body {
 filter:alpha(opacity=0);
 	background: inherit;
 	border: 0;
-	color: #263f6a;
+	color: #002561;
 	font-size: 0.1rem;
 	text-align: center;
 	line-height: 0.1;
@@ -237,7 +252,7 @@ filter:alpha(opacity=0);
 @media (max-width: 1000px) {
 
   .input {
-    font-size: 4rem;
+    font-size: 1rem;
     width: 140%;
   }
 }
@@ -267,17 +282,15 @@ filter:alpha(opacity=0);
 --------------------------------- */
 
 .instructions {
-  font-size: 1rem;
-  letter-spacing: 0.125em;
+  font-size: 2rem;
+  font-weight: bold;
   word-spacing: 0.1em;
   height: 4em;
-  color: #f13c46;
+  color: #fff;
   text-align: center;
   padding-top: 0.5em;
   width: 100%;
-  font-family: 'open sans', 'century gothic', arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: 'inconsolata', georgia, serif;
  -webkit-font-smoothing: antialiased;
  position: fixed;
  top: -100px;
@@ -285,8 +298,6 @@ filter:alpha(opacity=0);
  right: 0;
  bottom: 0;
  margin: auto;
- -webkit-animation: pulse 1s infinite forwards;
-         animation: pulse 1s infinite forwards;
 }
 
 @media (max-width: 1000px) {}
@@ -304,6 +315,14 @@ filter:alpha(opacity=0);
 	        animation: bounce 1.5s infinite;
 	-webkit-animation-delay: 2s;
 	        animation-delay: 2s;	
+}
+
+.enter-icon {
+  border: solid 1px #fff;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.1em 0.5em;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
@@ -328,16 +347,18 @@ filter:alpha(opacity=0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: calc(100vw - 8rem);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1rem;
-  padding: 1em;
+  padding: 1em 0;
+  border-top: solid 1px #fff;
    -webkit-font-smoothing: antialiased;
+   color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -367,109 +388,17 @@ filter:alpha(opacity=0);
 /*--------- Buttons ---------
 --------------------------------- */
 
-.btn:visited {
-  	color: black;
-  }
-
-.enter-icon {
-	margin-bottom: -0.5em;
-  height: 2rem;
-}
-
-.btn {
-  	text-decoration: none;
-  	border: solid 1px black;
-  	padding: 0.5em;
-  	margin: 0.5em;
-  	color: black;
-	transition: all 0.3s;
-	overflow: hidden;
-  border-radius: 0.25em;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	height: 2.5em;
-	width: 120px;
-	font-size: 0.875rem;
-	text-align: center;
-	line-height: 1.375;
-	margin-bottom: -0.5em;
-   -webkit-font-smoothing: antialiased;
-
-  }
-
-@media (max-width: 600px) {
-
-  .btn {
-    display: block;
-    margin: auto;
-    margin-top: 2em;
-    font-size: 0.75rem;
-    width: 100px;
-  }
-}
-
-.btn:hover {
-  	color: white !important;
-  }
-
-.btn:hover::after {
-  height: 100%;
-  width: 140%;
-  cursor: pointer;
-}
-
-.btn::after {
-  height: 180%;
-  left: -40%;
-  top: 0;
-  transition-duration: 0.5s;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  width: 0;
-  	transition: all ease-out 0.3s;
-  	  background: #fff;
-  content: '';
-  position: absolute;
-  z-index: -1;
-  
-}
-
-.btn::after {
-	background: black;
-}
-
-.btn--tweet::after {
-	background: #1da1f2;
-}
-
 .btn--tweet {
-	background: #263f6a;
-	border: none;
-	color: white;
-	line-height: 1.5;
-  margin: auto 1em;
+  padding: 0.25em 1em;
+  color: #fff;
+  font-weight: bold;
+  border: solid 3px #fff;
+  text-decoration: none;
 }
 
-@media (max-width: 600px) {
-
-  .btn--tweet {
-    margin-top: 1em;
-  }
-}
-
-.btn i {
-	margin-right: 1em;
-}
-
-.btn--tweet:hover::after {
-	color: white !important;
-	background-color: #1da1f2;
-
-}
-
-.btn--tweet:visited {
-	color: white !important;
+.btn--tweet a {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 

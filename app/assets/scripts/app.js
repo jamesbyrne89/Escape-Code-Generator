@@ -3,7 +3,7 @@ const character = document.getElementById('character');
 const code = document.getElementById('code');
 const instructions = document.getElementById('instructions');
 const input = document.getElementById('input');
-let enterIcon = `<img id="enter-icon" class="enter-icon" src="assets/images/Enter Key-50.png">`;
+let enterIcon = `<span id="enter-icon" class="enter-icon bounce">Enter</span>`;
 const validChar = `Press ${enterIcon} to copy to clipboard`;
 const defaultMessage = 'Type or paste something to get the HTML escape character';
 const copiedText = 'Copied to clipboard!';
@@ -348,7 +348,8 @@ const validInput = () => {
   input.classList.add('input--is-input');
   code.classList.add('code--has-code');
   instructions.classList.add('after');
-  code.value=(characters[input.value])
+  code.value=(characters[input.value]);
+    character.style.display = 'block';
 }
 
 const showDefault = () => {
@@ -357,7 +358,8 @@ const showDefault = () => {
      input.classList.remove('input--was-copied');
      code.classList.remove('code--has-code');
   code.value = '';
-  character.textContent=('');
+  character.innerHTML=('');
+
 }
 
 
