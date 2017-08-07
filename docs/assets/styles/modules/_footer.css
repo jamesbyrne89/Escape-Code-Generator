@@ -5,12 +5,14 @@
   position: absolute;
   bottom: 1.25rem;
   display: flex;
-  width: 100%;
+  width: calc(100vw - 8rem);
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 1rem;
-  padding: 1em;
+  padding: 1em 0;
+  border-top: solid 1px #fff;
    -webkit-font-smoothing: antialiased;
+   color: #fff;
     @mixin at800 {
     padding: 1em;
     font-size: 0.875rem;

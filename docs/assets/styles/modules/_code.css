@@ -2,22 +2,24 @@
 --------------------------------- */
 
 .code {
-  color: $navy;
-  font-size: 6rem;
+  color: #fff;
+  font-size: 12rem;
+  line-height: 1.2;
   text-align: center;
-  font-family: inherit;
-  background: transparent;
+  font-family: $sansSerif;
   font-weight: bold;
-  border: none;
-  display: block;
-  margin: 0 auto 50px auto;
+  border-top: solid 1px #fff;
+  border-left: 0;
+  border-right: 0;
+  border: 0;
+  display: inline-block;
+  margin: 0 auto;
   width: 100%;
-  min-height: 7.5rem;
-  padding: 0.125em 1em;
   visibility: hidden;
    -webkit-font-smoothing: antialiased;
+background: #000;
   @mixin at1000 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
     @mixin at600 {
     padding: 0.125em;
@@ -26,8 +28,8 @@
 }
 
 .code::selection {
-	background: #d5d5d5;
-	color: #005b74;
+	background: #f3ec19;
+	color: #fff;
 }
 .code:focus {
 	outline: none;

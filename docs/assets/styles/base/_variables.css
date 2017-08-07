@@ -1,10 +1,10 @@
 /* Typography */
 
-$primaryFont: 'Zilla Slab', georgia, serif;
-$sansSerif: 'open sans', 'century gothic', arial, sans-serif;
+$primaryFont: 'inconsolata', georgia, serif;
+$sansSerif: 'inconsolata', 'century gothic', arial, sans-serif;
 
 /* Colours */
 
-$orange: #f13c46;
-$navy: #263f6a;
-$paleGrey: #f1f0eb;
+$orange: #fff;
+$navy: #002561;
+$paleGrey: #737373;

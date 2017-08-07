@@ -8,11 +8,11 @@
 body {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  background: $paleGrey;
-  justify-content: space-between;
+  background: #000;
+  justify-content: center;
   height: 100vh;
   font-family: $sansSerif;
+  color: #fff;
 }
 
 .link {
@@ -20,7 +20,8 @@ body {
   display: inline-block;
   text-decoration: none;
   transition: all ease-out 0.2s;
-  color: $navy;
+  font-weight: bold;
+  color: #fff;
     border-bottom: solid 2px $orange;  
 }
 
@@ -32,4 +33,24 @@ body {
  .link:hover::after {
   width: 0;
   transition: all 0.2s;
+ }
+
+ .app-title {
+  position: relative;
+  top: 1rem;
+  left: 0rem;
+  text-align: left;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 1rem;
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1em;
+    width: 1em;
+    left: -1.5em;
+    top: 1.1em;
+    background: #fff;
+  }
  }
