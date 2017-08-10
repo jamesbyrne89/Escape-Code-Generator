@@ -342,7 +342,12 @@ const copyCode = (e) => {
 
 /* Check input is valid */
 const validInput = () => {
-    character.textContent=(input.value)
+
+    character.innerHTML = input.value;
+  if (input.value = ' ') {
+    character.innerHTML = 'Space';
+  }
+
   instructions.innerHTML=(validChar);
   document.querySelector('.enter-icon').classList.add('bounce');
   input.classList.add('input--is-input');

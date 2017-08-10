@@ -64,6 +64,10 @@ body {
   background: #fff;
 }
 
+a:visited {
+  color: #fff;
+ }
+
 /*--------- Keyframes ---------
 --------------------------------- */
 
@@ -144,8 +148,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
-  height: 90%;
+  width: 97%;
+  height: 97%;
   margin: auto;
   text-align: center;
   overflow: hidden;
@@ -171,7 +175,7 @@ body {
   text-align: center;
   margin: auto;
   width: auto;
-  line-height: 1;
+  line-height: 1.5;
   display: none;
   padding: 0.125em 0.5em 0.25em 0.5em;
    -webkit-font-smoothing: antialiased;
