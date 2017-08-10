@@ -54,3 +54,7 @@ body {
     background: #fff;
   }
  }
+
+ a:visited {
+  color: #fff;
+ }
